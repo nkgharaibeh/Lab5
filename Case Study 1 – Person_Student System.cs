@@ -44,6 +44,11 @@ class Program
         };
 
         s.DisplayStudent();         // Calling inherited method:
-
+/*
+KEY IDEA (OOP / Software Engineering):
+- Reusability: do not repeat base logic; call inherited method.
+- Extensibility: child can add features without changing the parent.
+*/
+        
     }
 }
