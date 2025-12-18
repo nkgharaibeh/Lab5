@@ -7,7 +7,8 @@ namespace Example_2___Overriding
 
     class Person
     {
-        public virtual void Greet()
+        
+        public virtual void Greet()     // 'virtual' means: "I allow derived classes to change this behavior".
         {
             Console.WriteLine("Hello, I am a person.");
         }
@@ -15,7 +16,7 @@ namespace Example_2___Overriding
 
     class Teacher : Person
     {
-        public override void Greet()
+        public override void Greet()     // 'override' means: "I replace the base implementation with my own".
         {
             Console.WriteLine("Hello, I am a teacher.");
         }
@@ -28,8 +29,14 @@ namespace Example_2___Overriding
             Person p = new Person();
             Teacher t = new Teacher();
 
-            p.Greet();
-            t.Greet();
+            p.Greet(); // base behavior
+            t.Greet(); // overridden behavior
+
+      /*
+        SLIDE CONNECTION:
+        - Inheritance is not only about reuse; it also enables customization (override).
+        - This is a bridge to Polymorphism: same method name, different behavior.
+     */
         }
     }
 
