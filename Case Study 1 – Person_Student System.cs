@@ -2,9 +2,13 @@ using System;
 
 class Person
 {
+    // FIELD (State) in the base class:
+    // This data belongs to the general concept "Person".
     public string Name;
     public int Age;
-
+    
+    // METHOD (Behavior) in the base class:
+    // Any derived class will inherit this behavior.
     public void DisplayPerson()
     {
         Console.WriteLine($"Name: {Name}, Age: {Age}");
@@ -13,6 +17,9 @@ class Person
 
 class Student : Person
 {
+    // SINGLE INHERITANCE:
+    // Student IS-A Person (Student inherits from Person using ':').
+    // Student gets Name + Age + Display() for free (code reuse).
     public int StudentID;
     public string Major;
 
@@ -27,14 +34,16 @@ class Program
 {
     static void Main()
     {
+        // Creating an object from the derived class:
         Student s = new Student()
         {
-            Name = "Lina",
+            Name = "Lina",         // Accessing inherited public fields:
             Age = 21,
-            StudentID = 2025205,
+            StudentID = 2025205,          // Accessing derived class own field:
             Major = "Computer Science"
         };
 
-        s.DisplayStudent();
+        s.DisplayStudent();         // Calling inherited method:
+
     }
 }
