@@ -70,3 +70,8 @@ namespace Member_Variable
         }
     }
 }
+/*
+SLIDE CONNECTION:
+- Child class can access: public, protected, internal, protected internal.
+- Private cannot be accessed directly, but can be exposed via public Property (GET/SET).
+*/
