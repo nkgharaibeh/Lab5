@@ -1,4 +1,4 @@
-using System;
+vusing System;
 /*
      * SLIDE: "C# || Programming Example 2" (Access Private Member in Child Class)
      * GOAL:
