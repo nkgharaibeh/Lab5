@@ -16,14 +16,19 @@ namespace Member_Variable
     
     class baseclass
     {
-        public int pub_var = 5;
-        protected int pro_var = 6;
-        internal int inter_var = 7;
+        public int pub_var = 5;  // Accessible everywhere
+        protected int pro_var = 6; // Accessible in derived classes 
+        internal int inter_var = 7;  // Accessible within same assembly/project
 
         // Private field: hidden implementation detail
         private int pri_var = 8;
-
-        // Property: controlled exposure of private field
+    // IMPORTANT SLIDE NOTE:
+    // Private member is inherited (it exists in the object),
+    // but it is NOT accessible directly in the child class.
+    // To expose it safely, we use a public property (GET/SET).
+        
+        //Therfore, Property: controlled exposure of private field
+        
         public int Private_variable
         {
             get
