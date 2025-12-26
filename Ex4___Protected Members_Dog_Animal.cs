@@ -24,3 +24,8 @@ class Program
         d.ShowType();
     }
 }
+/*
+SLIDE CONNECTION:
+- protected = visible to the "inheritance family" (base + derived),
+  but hidden from external classes.
+*/
