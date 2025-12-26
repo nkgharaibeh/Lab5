@@ -1,8 +1,5 @@
 using System;
-
-namespace Member_Variable
-{
-    /*
+/*
      * SLIDE: "C# || Programming Example 2" (Access Private Member in Child Class)
      * GOAL:
      * - Demonstrate: private fields are inherited (they exist inside the object),
@@ -14,6 +11,9 @@ namespace Member_Variable
      * - We expose a controlled interface (Property) to allow safe read/write.
      */
 
+namespace Member_Variable
+{
+    
     class baseclass
     {
         public int pub_var = 5;
