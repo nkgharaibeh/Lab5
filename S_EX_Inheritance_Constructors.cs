@@ -12,7 +12,6 @@
      * OUTPUT (like slide):
      * - I am Default baseclass Constructor
      * - I am Default childclass Constructor
-     * - I am Default baseclass Constructor
      * - baseclass Constructor Message : Hello Constructor
      * - childclass Constructor Message : Hello Constructor
      */
